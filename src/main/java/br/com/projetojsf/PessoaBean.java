@@ -22,9 +22,10 @@ public class PessoaBean {
 		
 		if (nomes.size() > 3) {
 			commandButton.setDisabled(true);
+			return "paginanavegada?faces-redirect=true";
 		}
 		
-		return "";
+		return ""; //null ou vázio fica na mesma página -> outcome
 	}
 
 	public void setNomes(List<String> nomes) {
