@@ -5,13 +5,20 @@
 
 <h:head>
 	<title>Olá Kauan</title>
+	
+	<script>
+		function alterarValorDoCampo() {
+			let campo = document.getElementById('formPessoa:nome');
+			campo.value = 'Eu cliquei no campo :)';
+		}
+	</script>
 </h:head>
 
 <h:body>
 	<h:form id="formPessoa">
 		<h1>Projeto JSF página index.jsf</h1>
-		<h:inputText id="nome"/>
-		<h:commandButton />
+		<h:inputText id="nome" onclick="this.value ='troquei o valor'" onchange="this.value = this.value.toUpperCase();"/>
+		<h:commandButton value="Clicar" onclick="alterarValorDoCampo();"/>
 		
 		<br/>
 		<br/>

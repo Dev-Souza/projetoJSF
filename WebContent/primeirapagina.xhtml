@@ -10,16 +10,9 @@
 <h:body>
 	<h:form id="formPessoa">
 		<h1>Projeto JSF</h1>
-		Nome:
-		<h:inputText id="nome" value="#{pessoaBean.nome}" />
-
-		<h:commandButton binding="#{pessoaBean.commandButton}" value="Adicionar Nome" action="#{pessoaBean.addNome}"></h:commandButton>
-
-		<h:dataTable value="#{pessoaBean.nomes}" var="nome">
-			<h:column>
-				<h:outputText value="#{nome}" />
-			</h:column>
-		</h:dataTable>
+		<h:outputText value="#{pessoaBean.nome}"/><br/>
+		<h:outputLabel value="Nome:" for="camponome"/>
+		<h:inputText id="camponome" value="#{pessoaBean.nome}"/>
 	</h:form>
 </h:body>
 </html>
