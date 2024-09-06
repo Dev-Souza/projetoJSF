@@ -45,6 +45,7 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.6.0</version>
+			<scope>compile</scope>
 		</dependency>
 
 
@@ -59,6 +60,7 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>5.6.0.Final</version>
+			<scope>compile</scope>
 		</dependency>
 
 		<dependency>
